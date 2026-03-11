@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Únete a la Comunidad Appwise</h1>
+    </header>
+    <section>
+        <form action="#">
+            <label for="nombre">Nombre Completo:
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+            </label>
+            <label for="correo">Correo Electrónico:
+                <input type="email" id="correo" name="correo" placeholder="tu@email.com" required>
+            </label>
+            <label for="contraseña">Contraseña:
+                <input type="password" id="contraseña" name="contraseña" placeholder="***" required>
+            </label>
+            <label for="nacimiento">Fecha de Nacimiento:
+                <input type="date" id="nacimiento" name="nacimiento" required>
+            </label>
+            <label for="nivel">Nivel de Programación:
+                <select name="niveles" id="nivel">
+                    <option value="trainee">Trainee (Recien empiezo)</option>
+                    <option value="junior">Junior (Tengo algo de conocimiento y experiencia)</option>
+                    <option value="semi-senior">Semi-Senior (Tengo mucha experiencia y conocimiento en mi trabajo)</option>
+                </select>
+            </label>
+            <p><strong>¿Cual es tu especialidad favorita?</strong></p>
+            <label for="frontend">Frontend (Diseño e interfaz)
+                <input type="radio" id="frontend" name="especialidad" value="frontend" required>
+            </label>
+            <label for="backend">Backend (Lógica y Base de Datos)
+                <input type="radio" id="backend" name="especialidad" value="backend" required>
+            </label>
+            <label for="terminos"> Acepto los términos y condiciones de la academia.
+                <input type="checkbox" name="terminos" required>
+            </label>
+            <button type="submit">Crear Cuenta</button>
+        </form>
+    </section>
+</body>
+</html>

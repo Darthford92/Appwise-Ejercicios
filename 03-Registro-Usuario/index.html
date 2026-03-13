@@ -3,45 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro - Appwise</title>
 </head>
 <body>
-    <header>
-        <h1>Únete a la Comunidad Appwise</h1>
-    </header>
-    <section>
-        <form action="#">
-            <label for="nombre">Nombre Completo:
-                <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
-            </label>
-            <label for="correo">Correo Electrónico:
-                <input type="email" id="correo" name="correo" placeholder="tu@email.com" required>
-            </label>
-            <label for="contraseña">Contraseña:
-                <input type="password" id="contraseña" name="contraseña" placeholder="***" required>
-            </label>
-            <label for="nacimiento">Fecha de Nacimiento:
-                <input type="date" id="nacimiento" name="nacimiento" required>
-            </label>
-            <label for="nivel">Nivel de Programación:
-                <select name="niveles" id="nivel">
-                    <option value="trainee">Trainee (Recien empiezo)</option>
-                    <option value="junior">Junior (Tengo algo de conocimiento y experiencia)</option>
-                    <option value="semi-senior">Semi-Senior (Tengo mucha experiencia y conocimiento en mi trabajo)</option>
-                </select>
-            </label>
-            <p><strong>¿Cual es tu especialidad favorita?</strong></p>
-            <label for="frontend">Frontend (Diseño e interfaz)
-                <input type="radio" id="frontend" name="especialidad" value="frontend" required>
-            </label>
-            <label for="backend">Backend (Lógica y Base de Datos)
-                <input type="radio" id="backend" name="especialidad" value="backend" required>
-            </label>
-            <label for="terminos"> Acepto los términos y condiciones de la academia.
-                <input type="checkbox" name="terminos" required>
-            </label>
-            <button type="submit">Crear Cuenta</button>
-        </form>
-    </section>
+    <h1>Únete a la comunidad AppWise</h1>
+    <form action="#" name="inscripción" autocomplete="off">
+        <label for="nombre">Nombre Completo:</label>
+        <!--El label es el texto que acompaña el input e indica
+        que es lo que se tiene que ingresar en el mismo,
+        se conecta al input mediante la propiedad for
+        que busca la propiedad id para identificar el input-->
+        <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan Pérez" required>
+        <!--El input es la caja dónde podemos introducir texto,
+        seleccionar opciones, etc. Su tipo define que es lo que hace
+        text -> te deja escribir
+        email -> el navegador verifica que lo escrito tenga forma
+        de correo electrónico
+        password -> para contraseñas, oculta lo que escribis
+        date -> muestra un calendario y te permite elegir fechas
+        numer -> solo deja meter números (se le pueden poner 
+        propiedades para limitarlos) tiene flechitas para aumentar o
+        disminuir el valor del número (spinner)
+        radio -> te da varias elecciones donde solo podes elegir una
+        checkbox -> Permite marcar más de una opción de la lista que da (cuadrado)
+        file -> permite subir archivos (fotos o cv por ej)
+        submit -> sirve para enviar el formulario, aunque hoy 
+        en día se usa más el button-->
+        <label for="email">Correo Electrónico: </label>
+        <input type="email" name="email" id="email" placeholder="tu@email.com" required>
+        <!--Me tomé el atrevimiento de agregar un usuario porque pensé 
+        que hacia falta--> 
+        <label for="usuario">Usuario: </label>
+        <input type="text" name="usuario" id="usuario" placeholder="Ej: Terminator" required>
+        <!--name sirve para sabér de que input viene la información
+        id sirve para hacer conección entre el label y el input y
+        placeholder es para que haya un ejemplo en el input a rellenar
+        que sirva como guía al usuario. Por último required hace que no se pueda
+        enviar el formulario sin antes sin rellenar los campos-->
+
+        <label for="contraseña"> Contraseña: </label>
+        <input type="password" name="contraseña" id="contraseña" placeholder="**********" required>
+
+        <label for="nacimiento">Fecha de Nacimiento: </label>
+        <input type="date" name="nacimiento" id="nacimiento" required>
+
+        <label for="nivel">Nivel en Programación: </label>
+        <!--Para hacer una lista dentro de un desplegable, de la cual solo se puede 
+        elegir una opción, se debe usar  select con sus option como hijos, 
+        usar radio mostrara todas las opciones a la vista y checkbox igual
+        asi que para este caso no nos sirven-->
+        <select name="nivel" id="nivel">
+            <option>Trainee</option>
+            <option>Junior</option>
+            <option>Semi-Senior</option>
+        </select>
+        
+        <p>¿Cual es su especialidad favorita?</p>
+
+        <input type="radio" name="especialidad" id="frontend" required value="frontend">
+        <label for="frontend">Frontend (Diseño e Interfaz)</label>
+        <!-- al meterle un label a los input tipo radio le damos al usuario
+         la posibilidad de que los selecciones al hacer click en el texto 
+         y no solo en los circulos de selección.
+         el atributo value sirve para luego organizar la información del formulario
+         que recibira con nombre el nombre del input que lo envía y con value
+         el valor que se envía-->
+
+        <input type="radio" name="especialidad" id="backend" value="backend">
+        <label for="backend"> Backend (Lógica y Bases de Datos)</label>
+
+        <label for="terminos"> Acepto los términos y conidicones de la academia</label>
+        <input type="checkbox" name="terminos" id="terminos" required>
+
+        <button type="submit" name="CrearCuenta" value="crear" >Crear Cuenta</button>
+        <!--Los botones tienen varios tipos, submit envía la información de los
+        formularios, button no hace nada por si solo, servira al meterle javascrip 
+        y usar el DOM, por último reset sirve para limpiar los datos del formulario.
+        Si no se pone el tipo el botón por defecto será submit.
+        La diferencia entre el botón submit y el input tipo submit es que el botón
+        puede tener configuraciónes del html enbebidas en si mismo, como una imágen,
+        un sonido al apretarlo, negrita, etc mientras que el input tipo submit solo
+        pasaran su texto.
+        value es una propiedad que envía un valor con el formulario
+        disabled desactiva el botón, con javascript luego se puede poner alguna
+        condición para habilitarlo nuevamente
+        autofocus centra la pagina en el botón al recargar
+        form permite conectar el botón con un formulario aunque el mismo esté fuera de 
+        la página-->
+    </form>
 </body>
 </html>

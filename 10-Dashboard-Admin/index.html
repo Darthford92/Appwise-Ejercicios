@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Appwise</title>
+</head>
+<body>
+<!-- Para que los conocimientos se me afiancen, en todos los ejercicios realicé primero
+ el código por mi cuenta y luego miré las instrucciones del README, con el cual
+ modifiqué luego el código.
+ En éste punto será igual pero voy a dejar el código razonado primeramente por mí
+ comentado y luego el código modificado para una mejor corrección del contenido
+ aprendido.
+    
+    <aside>
+         como el aside, la barra celeste oscura, aparece primero no me pareció
+         meterla dentro del main que, a mi parecer, es el resumen general
+        <h2>Appwise Admin</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Usuarios</li>
+            <li>Reportes</li>
+            <li>Configuración</li>
+        </ul>
+    </aside>
+    <main>
+        <header>
+            <section>
+                <input type="search" placeholder="Buscar en el panel">
+                <p>Hola, <strong>Admin</strong></p> <img src="assets/avatar.png" alt="Avatar usuario actual" height="75">
+            </section>
+        </header>
+        <section>
+            <h1>Resumen General</h1>
+            <button>Nuevo Usuario</button>
+            <article>
+                USUARIOS ACTIVOS <br>
+                <strong>1,250</strong><br>
+                +5% esta semana
+            </article>
+
+            <article>
+                VENTAS DEL MES <br>
+                <strong>14,500</strong><br>
+                +12% esta semana
+            </article>
+            <article>
+                TICKETS PENDIENTES <br>
+                <strong>8</strong><br>
+                Requiere atención
+            </article>
+            <h2>Actividad Reciente</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>FECHA</th>
+                        <th>USUARIO</th>
+                        <th>ACCIÓN</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15 Oct, 10:30</td>
+                        <td>carlos.dev</td>
+                        <td>Subió un nuevo proyecto</td>
+                        <td>Completado</td>
+                    </tr>
+                    <tr>
+                        <td>15 Oct, 09:15</td>
+                        <td>ana.ui</td>
+                        <td>Actualizó perfil</td>
+                        <td>Completado</td>
+                    </tr>
+                    <tr>
+                        <td>15 Oct, 18:45</td>
+                        <td>juan.perez</td>
+                        <td>Intento de pago</td>
+                        <td>Fallido</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </section>
+    </main>
+-->
+    <aside>
+        <h2>Appwise Admin</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Usuarios</a></li>
+                <li><a href="#">Reportes</a></li>
+                <li><a href="#">Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <header>
+            <input type="search" placeholder="Buscar en el panel">
+            <p>Hola, <strong>Admin</strong></p> <img src="assets/avatar.png" alt="Avatar usuario actual" height="75">
+        </header>
+        <section>
+            <article>
+                <h3>USUARIOS ACTIVOS</h3>
+                <strong>1,250</strong><br>
+                +5% esta semana
+            </article>
+            <article>
+                <h3>VENTAS DEL MES</h3>
+                <strong>14,500</strong><br>
+                +12% esta semana
+            </article>
+            <article>
+                <h3>TICKETS PENDIENTES</h3>
+                <strong>8</strong><br>
+                Requiere atención
+            </article>
+        </section>
+        <section>
+            <h2>Actividad Reciente</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>FECHA</th>
+                        <th>USUARIO</th>
+                        <th>ACCIÓN</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15 Oct, 10:30</td>
+                        <td>carlos.dev</td>
+                        <td>Subió un nuevo proyecto</td>
+                        <td>Completado</td>
+                    </tr>
+                    <tr>
+                        <td>15 Oct, 09:15</td>
+                        <td>ana.ui</td>
+                        <td>Actualizó perfil</td>
+                        <td>Completado</td>
+                    </tr>
+                    <tr>
+                        <td>15 Oct, 18:45</td>
+                        <td>juan.perez</td>
+                        <td>Intento de pago</td>
+                        <td>Fallido</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <dialog open>
+        <h3>Añadir Nuevo Usuario</h3>
+        <form action="#" method="post">
+            <label for="nombre">Nombre de usuario</label>
+            <input type="text" placeholder="Ingrese el nombre de usuario" name="Nuevo_Usuario">
+            <button type="submit">Guardar</button>
+            <button type="button">Cancelar</button>
+        </form>
+    </dialog>
+</body>
+</html>

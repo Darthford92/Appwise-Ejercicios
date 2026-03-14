@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teclado Appwise Ninja</title>
 </head>
+
 <body>
     <header>
         <h1>Teclado Mecánico Appwise Ninja</h1>
         <p>Escriba a la velocidad de la luz. Sin distracciones</p>
-        <button type="button">Comprar Ahora - $99</button>
+        <button type="button"><strong>Comprar Ahora - $99</strong></button>
     </header>
 
     <section>
-        <video src="assets/promo.mp4" width="300" height="300" preload="auto"
-        controls autoplay muted loop>
+        <video width="300" height="300" preload="auto"
+         autoplay muted loop title="Video automático del producto">
         <!-- En video src (source) nos indica la ruta en la cual está guardado
          el video.
          width define el ancho del reproductor en pixeles (no cambia la 
@@ -38,5 +39,70 @@
         </video>
     </section>
 
+    <section>
+        <h2>Compara nuestros modelos</h2>
+        <table border="1" width="600" height="200" align="center" cellpadding="10" cellspacing="0">
+            <!--Table tiene varios atributos:
+            border -> define cuanto borde va a tener
+            width y height definen ancho y algo
+            align -> define para dónde estará alineada la tabla 
+            cellpading -> es el espacio entre el contenido y la celda en si misma
+            cellspacing -> define el espacio entre cada celda-->
+            <thead>
+                <tr>
+                    <th>Características</th>
+                    <!-- los th suelen venir centrados y en negrita-->
+                    <th>Modelo Básico</th>
+                    <th>Modelo Ninja(PRO)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- La diferenciacion de partes de una tabla busca un mejor entendimiento en aquellas
+                 que sean demasiado grandes y, además, cuando se aplique css se puede seleccionar
+                 cada parte por separado para agregarle estilo o también se puede seleccionar
+                 cada parte por separado en javascript-->
+                <tr>
+                    <td><strong>Switches(Interruptores)</strong></td>
+                    <!--Para meterle negrita a una celda común podemos usar Strong-->
+                    <td>Membrana</td>
+                    <td>Mecánicos(Red Lineal)</td>
+                </tr>
+                <tr>
+                    <td><strong>Retroiluminación</strong></td>
+                    <td>Color Fijo</td>
+                    <td>RGB Personalizable por tecla</td>
+                </tr>
+                <tr>
+                    <td><strong>Precio</strong></td>
+                    <td>$29.99</td>
+                    <td><strong>$99.99</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Mira la reseña completa</h2>
+        <iframe src="https://appwiseinnovations.dev/ACADEMY/promo.mp4" 
+        frameborder="0" width="300" height="200" title="Video del producto"
+        allowfullscreen loading="lazy" name="producto de oferta" allow="fullscreen" sandbox="">
+        </iframe>
+        <!-- El Iframe es una forma de insertar una parte de una web externa en la tuya misma,
+         tiene varios atributos útiles:
+         width y height definen ancho y largo
+         title es para accesibilidad, describe el video para personas que no tengan forma de acceder a él.
+         allowfullscreen y allow="fullscreen" el primero es una propiedad de html para que se vea en
+         pantalla completa el video, el segundo es lo mismo pero allow es una propiedad nueva que permite
+         activar y desactivar permisos en los iframes, se suelen usar ambos para asegurar compatibilidad 
+         en distintos navegadores.
+         loading controla cuando se carga el iframe dónde lazy hace que se cargue solo cuando está en
+         pantalla.
+         Sandbox por último añade restricciones para que el iframe no ejecute nada (si el valor está vacio)
+         o se puede ajustar para permitir ciertas acciones.-->
+    </section>
+    <footer>
+        <a href="#">Términos de Garantía</a>
+        <a href="#">Soporte Técnico</a>
+    </footer>
 </body>
 </html>

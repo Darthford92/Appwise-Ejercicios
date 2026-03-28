@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #b5d6d5 ;
+    color: rgb(161, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    text-align: center;
+    margin: 50px;
+}
+
+#Plato{
+    border-radius: 10px;
+    margin: 30px;
+}
+
+ul, ol{
+    list-style-position: inside;
+}
+
+
+div{
+    color: black;
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+h2{
+    color: #C240AB;
+}
+hr{
+    margin: 10px;
+    border: none;
+    height: 1px;
+    background-color: #D32F31;
+}
+
+footer{
+    margin: 30px;
+    width: 57%;
+    text-align: center;
+    font-size: large;
+}

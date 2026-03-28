@@ -19,6 +19,9 @@ Recuerda: **NO** estamos usando CSS todavía. La página se verá "fea", en blan
 
 > _Nota: Si la imagen de arriba no carga, imagina una página con un título grande, una foto de comida debajo, una lista de ingredientes con puntitos y una lista de pasos con números._
 
+### Resultado
+![Vista previa del resultado final en HTML puro](assets/Proyecto%20Finalizado.png)
+
 ---
 
 ## 🔧 Requerimientos Técnicos (Instrucciones)

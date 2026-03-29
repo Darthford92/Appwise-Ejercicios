@@ -16,6 +16,12 @@ Construir la estructura de una Landing Page comercial utilizando etiquetas multi
 ![Vista previa de la Landing Page](assets/preview_2.png)
 ![Vista previa de la Landing Page](assets/preview_3.png)
 
+### 👀 Resultado Final
+
+![Vista previa de la Landing Page](assets/Screenshot_282.png)
+![Vista previa de la Landing Page](assets/Screenshot_283.png)
+
+
 > 🚨 **Aclaración del Profe:** Como siempre, al escribir solo HTML, tu video se verá gigante, la tabla se verá sin bordes lindos y todo estará apilado a la izquierda. ¡Es normal! Estamos construyendo los cimientos del edificio comercial.
 
 ---

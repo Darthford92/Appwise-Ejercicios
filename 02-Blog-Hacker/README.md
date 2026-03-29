@@ -14,6 +14,10 @@ Construir la estructura de un post de blog utilizando las etiquetas semánticas 
 
 ![Vista previa del Blog Hacker](assets/preview.png)
 
+### Resultado completado
+
+![Vista previa del Blog Hacker](assets/Blog%20Hacker%20Completo.png)
+
 > 🚨 **Aclaración del Profe:** La imagen de arriba muestra nuestro diseño "Hacker / Matrix" con fondo oscuro. Recuerda que tú solo estás haciendo el HTML, así que se verá con fondo blanco y letras negras. ¡Concéntrate en que las etiquetas sean las correctas!
 
 ---

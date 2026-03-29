@@ -12,7 +12,7 @@ Construir un formulario de registro completo utilizando la etiqueta `<form>` y l
 
 ### 👀 Referencia Visual (Resultado Esperado)
 
-_(Profe: Reemplaza esta línea con la captura de pantalla de tu versión con CSS)_
+![Vista previa del Formulario](assets/Screenshot_273.png)
 ![Vista previa del Formulario](assets/preview.png)
 
 > 🚨 **Aclaración del Profe:** Como siempre, tú solo escribirás el esqueleto (HTML). En tu navegador verás los campos uno al lado del otro o de forma muy básica. ¡No te preocupes por el diseño, enfócate en usar los `type` correctos en los inputs!

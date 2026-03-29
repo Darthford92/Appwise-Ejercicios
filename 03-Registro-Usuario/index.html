@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Appwise</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Únete a la comunidad AppWise</h1>
+    <h1>Únete a la comunidad Appwise</h1>
     <form action="#" name="inscripción" autocomplete="off">
-        <label for="nombre">Nombre Completo:</label>
+        <label for="nombre"><strong>Nombre Completo:</strong></label>
         <!--El label es el texto que acompaña el input e indica
         que es lo que se tiene que ingresar en el mismo,
         se conecta al input mediante la propiedad for
@@ -31,11 +32,11 @@
         en día se usa más el button
         search -> sirve para hacer un buscador
         -->
-        <label for="email">Correo Electrónico: </label>
+        <label for="email"><Strong>Correo Electrónico: </Strong></label>
         <input type="email" name="email" id="email" placeholder="tu@email.com" required>
         <!--Me tomé el atrevimiento de agregar un usuario porque pensé 
         que hacia falta--> 
-        <label for="usuario">Usuario: </label>
+        <label for="usuario"><Strong>Usuario: </Strong></label>
         <input type="text" name="usuario" id="usuario" placeholder="Ej: Terminator" required>
         <!--name sirve para sabér de que input viene la información
         id sirve para hacer conección entre el label y el input y
@@ -43,13 +44,13 @@
         que sirva como guía al usuario. Por último required hace que no se pueda
         enviar el formulario sin antes sin rellenar los campos-->
 
-        <label for="contraseña"> Contraseña: </label>
+        <label for="contraseña"><Strong> Contraseña: </Strong></label>
         <input type="password" name="contraseña" id="contraseña" placeholder="**********" required>
 
-        <label for="nacimiento">Fecha de Nacimiento: </label>
+        <label for="nacimiento"><Strong>Fecha de Nacimiento: </Strong></label>
         <input type="date" name="nacimiento" id="nacimiento" required>
 
-        <label for="nivel">Nivel en Programación: </label>
+        <label for="nivel"><Strong>Nivel en Programación: </Strong></label>
         <!--Para hacer una lista dentro de un desplegable, de la cual solo se puede 
         elegir una opción, se debe usar  select con sus option como hijos, 
         usar radio mostrara todas las opciones a la vista y checkbox igual
@@ -60,10 +61,12 @@
             <option>Semi-Senior</option>
         </select>
         
-        <p>¿Cual es su especialidad favorita?</p>
+        <p><Strong>¿Cual es su especialidad favorita?</Strong></p>
 
-        <input type="radio" name="especialidad" id="frontend" required value="frontend">
-        <label for="frontend">Frontend (Diseño e Interfaz)</label>
+        <label for="frontend">
+            <input type="radio" name="especialidad" id="frontend" required value="frontend">
+            Frontend (Diseño e Interfaz)
+        </label>
         <!-- al meterle un label a los input tipo radio le damos al usuario
          la posibilidad de que los selecciones al hacer click en el texto 
          y no solo en los circulos de selección.
@@ -71,11 +74,18 @@
          que recibira con nombre el nombre del input que lo envía y con value
          el valor que se envía-->
 
-        <input type="radio" name="especialidad" id="backend" value="backend">
-        <label for="backend"> Backend (Lógica y Bases de Datos)</label>
+        
+        <label for="backend">
+            <input type="radio" name="especialidad" id="backend" value="backend">
+            Backend (Lógica y Bases de Datos)
+        </label>
 
-        <label for="terminos"> Acepto los términos y conidicones de la academia</label>
-        <input type="checkbox" name="terminos" id="terminos" required>
+        
+        <label for="terminos">
+            <input type="checkbox" name="terminos" id="terminos" required>
+            Acepto los términos y conidicones de la academia
+        </label>
+        
 
         <button type="submit" name="CrearCuenta" value="crear" >Crear Cuenta</button>
         <!--Los botones tienen varios tipos, submit envía la información de los

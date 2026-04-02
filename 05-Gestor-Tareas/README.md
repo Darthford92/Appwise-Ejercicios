@@ -13,6 +13,7 @@ Construir una interfaz de usuario limpia para agregar y visualizar tareas. Utili
 ### 👀 Referencia Visual (Resultado Esperado)
 
 ![Vista previa del Gestor de Tareas](assets/preview.png)
+![Vista finalizada del Gestor de Tareas](assets/Screenshot_279.png)
 
 > 🚨 **Aclaración del Profe:** Vas a escribir un par de "tareas falsas" directamente en tu HTML. En el futuro, esas tareas nacerán vacías y las agregaremos nosotros mismos tecleando y usando JavaScript. ¡Pero primero necesitamos el molde!
 

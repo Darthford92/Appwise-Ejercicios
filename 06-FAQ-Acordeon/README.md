@@ -13,6 +13,7 @@ Construir un acordeón interactivo utilizando las etiquetas `<details>` y `<summ
 ### 👀 Referencia Visual (Resultado Esperado)
 
 ![Vista previa del FAQ](assets/preview.png)
+![Vista finalizada del FAQ](assets/Screenshot_302.png)
 
 > 🚨 **Aclaración del Profe:** Vas a notar que, sin CSS, las preguntas tienen una flechita negra muy básica a la izquierda. Ese es el comportamiento por defecto del navegador. En este desafío, ¡lo importante es que funcione el clic!
 

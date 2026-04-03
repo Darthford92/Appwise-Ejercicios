@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Directorio de Empleados</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
-        <h1><center>Directorio Interno - Appwise</center></h1>
-        <!-- el atributo center sirve para centrar cualquier texto
-         actualmente se hace más con css pero acá solo tenemos html puro-->
-        <p><center>Listado actualizado del personal del equipo de desarrollo</center></p>
-        <table border="1" width="600" height="200" align="center" cellpadding="10" cellspacing="0">
+        <header>
+            <h1>Directorio Interno - Appwise</h1>
+            <p>Listado actualizado del personal del equipo de desarrollo</p>
+        </header>
+        <table>
+            
             <thead>
                 <tr>
                     <th>ID</th>
@@ -21,7 +23,9 @@
                     <th>Email Corporativo</th>
                 </tr>
             </thead>
+
             <tbody>
+
                 <tr>
                     <td>#001</td>
                     <td>Ana Gómez</td>
@@ -41,16 +45,18 @@
                     <td><a href="mailto:laura@appwise.com">laura@appwise.com</a></td>
                 </tr>
             </tbody>
+
             <tfoot>
                 <tr>
                     <td colspan="4">
                         <!-- el atributo colspan sirve para unificar celdas de una fila
                         (horizontal)
                         rowspan hace lo mismo pero en una columna (vertical)-->
-                        <p ><center>Total de personal activo: 3 empleados</center></p>
+                        <p >Total de personal activo: 3 empleados</p>
                     </td>
                 </tr>
             </tfoot>
+
         </table>
     </main>
 </body>

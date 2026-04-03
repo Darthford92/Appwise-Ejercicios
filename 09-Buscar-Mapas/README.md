@@ -13,7 +13,7 @@ Aprender a incrustar contenido de terceros (Google Maps) combinándolo con una l
 ### 👀 Referencia Visual (Resultado Esperado)
 
 ![Vista previa del Buscador de Mapas](assets/preview.png)
-![Vista Finalizada del Buscador de Mapas](assets/Screenshot_309.png)
+![Vista Finalizada del Buscador de Mapas](assets/Screenshot_316.png)
 
 > 🚨 **Aclaración del Profe:** Como siempre, en tu HTML puro el mapa probablemente aparezca gigante o desacomodado respecto a la lista de texto. Recuerda que HTML solo estructura el contenido, el diseño a dos columnas se lo daremos luego con CSS.
 

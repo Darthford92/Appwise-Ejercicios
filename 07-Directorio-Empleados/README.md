@@ -14,6 +14,7 @@ Construir una tabla semántica y bien estructurada que muestre el directorio de 
 
 _(Profe: Reemplaza con tu captura de pantalla de la tabla con CSS)_
 ![Vista previa de la Tabla](assets/preview.png)
+![Vista finalizada de la Tabla](assets/Screenshot_306.png)
 
 > 🚨 **Aclaración del Profe:** Las tablas en HTML puro (sin CSS) se ven literalmente como un documento de Word de 1995. Recuerda ponerle el atributo `border="1"` temporalmente a tu etiqueta `<table>` para que puedas ver las líneas mientras trabajas.
 

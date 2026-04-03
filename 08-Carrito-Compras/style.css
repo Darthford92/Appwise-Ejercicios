@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*  */
+
+/* 
+Notas:
+Nº1: ESTO NO HACERLO EN EL BODY ENTERO SI QUIERO UN LAYOUT COMPLETO
+PORQUE CENTRA TODO SIN CONTROL
+display: flex;
+flex-direction: column;
+align-items: center;
+
+Nº2: DISPLAY FLEX AFECTA AL HIJO DIRECTO, NO A SUS HIJOS COMO EN ESTE CASO:
+<nav class="navbar">
+  <ul>
+    <li>...</li>
+  </ul>
+</nav>
+LOS LI NO SE VAN A ALINEAR GRACIAS A DISPLAY FLEX
+
+Nº3: text-align: center; NO CONTROLA DISTRIBUCIÓN DE LINKS
+
+Nº4: SI VOY A USAR FLEX DEBO USARLO BIEN, DEFINIENDO DIRECCION Y DISTRIBUCION DEL FLEX
+FLEX NECESITA DIRECCIÓN Y UN OBJETIVO CLARO
+NO SOLO USAR:
+display: flex;
+align-items: center;
+
+Nº5: REVISAR LAS CLASES DE LO QUE QUIERO MODIFICAR
+
+Nº6: GAP NO SEPARA LINKS, SEPARA HIJOS DIRECTOS EN UN
+CONTENEDOR FLEX/GRID
+
+Nº7 Height Delimita el contenido, si se quiere hacer dinamico hay que sacarlo
+
+Nº8 PARA LAYOUT HORIZONTAL DE 1 FILA DEBEMOS USAR FLEX, NO GRID
+GRID ES CUANDO SE SUMAN FILAS Y COLUMNAS
+
+Nº9 FLEX:1; AYUDA A QUE EL CONTENIDO SE ACOMODE MEJOR, CRECIENDO Y OCUPANDO ESPACIO DISPONIBLE
+
+Nº10 FLEX:WRAP; DEJA QUE LOS ELEMENTOS BAJEN DE LINEA SI NO ENTRAN
+
+Nº11 MARGIN AFECTA AL ELEMENTO, NO A SUS HIJOS
+
+Nº12 PARA PONER HEIGH 100% EL CONTENEDOR TIENE QUE TENER ALTURA DEFINIDA
+
+
+*/
+
+body{
+        background-color: rgb(221, 221, 221);
+}
+
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.products_container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+}
+
+section{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    flex: 1;
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    gap: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: -90px;
+}
+
+aside h2{
+    text-align: start;
+}
+
+aside h3{
+    text-align: end;
+}
+
+.add_product{
+    padding: 5px;
+    padding-inline: 20px;
+    background-color: rgb(17, 93, 255);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.right{
+    display: flex;
+    align-items:center;
+    gap: 5px;
+}
+
+article img{
+    width: 100%;
+    max-width: 120px;
+    height: 100px; /* Da a todas las imagenes la misma altura visual */
+    object-fit: contain; /* Ayuda a que la imagen no se deforme */
+    display: block; /* Ayuda a que margin 0 auto funcione bien ya que img es inline */
+    margin: 0 auto; /* centra horizontalmente */
+}
+
+article h3{
+    margin: auto;
+}
+
+article p{
+    margin-top: auto;
+    color: green;
+}
+
+#buy{
+    background-color: rgb(61, 177, 61);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+.remove_element{
+    background-color: white;
+    color: red;
+    border: none;
+}
+
+#cart{
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    padding: 10px;
+
+}

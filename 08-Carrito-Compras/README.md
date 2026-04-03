@@ -13,6 +13,7 @@ Estructurar la página dividiendo el contenido principal (productos) de la barra
 ### 👀 Referencia Visual (Resultado Esperado)
 
 ![Vista previa del Carrito](assets/preview.png)
+![Vista finalizada del Carrito](assets/Screenshot_308.png)
 
 > 🚨 **Aclaración del Profe:** En HTML puro, tu "barra lateral" del carrito no aparecerá al lado de los productos, sino debajo de ellos. ¡El HTML no sabe de diseños en columnas! Lo importante es que uses la etiqueta `<aside>` para el carrito, preparando el terreno para cuando usemos CSS.
 

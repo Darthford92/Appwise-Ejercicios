@@ -13,6 +13,7 @@ Combinar todo lo aprendido en el curso: Semántica avanzada, enlaces, tablas, fo
 ### 👀 Referencia Visual (Resultado Esperado)
 
 ![Vista previa del Dashboard](assets/preview.png)
+![Vista Finalizada del Dashboard](assets/Screenshot_321.png)
 
 > 🚨 **Aclaración del Profe:** Esta es una estructura compleja. En HTML puro verás todo apilado hacia abajo en una sola columna larguísima. No te frustres, es el comportamiento correcto. Piensa en esto como los planos arquitectónicos de un rascacielos.
 

@@ -62,30 +62,29 @@ header{
     color: white;
     padding: 10px;
     justify-content: space-between;
+    align-items: center;
 }
 
 main{
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    padding: 20px;
 }
 .products_container{
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    padding: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
-section{
-    margin: 20px;
+#productosSection{
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    gap: 20px;
-
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 article{
@@ -94,9 +93,8 @@ article{
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    flex: 1;
-    width: 100%;
-    max-width: 200px;
+    width: 280px;
+    min-height: 380px;
     border: none;
     border-radius: 10px;
     background-color: white;
@@ -105,69 +103,127 @@ article{
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-aside{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    width: 100%;
-    max-width: 350px;
-    border: none;
-    border-radius: 10px;
-    background-color: white;
-    text-align: center;
-    position: relative;
-    top: -90px;
-}
-
-aside h2{
-    text-align: start;
-}
-
-aside h3{
-    text-align: end;
-}
-
-.add_product{
-    padding: 5px;
-    padding-inline: 20px;
-    background-color: rgb(17, 93, 255);
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    border: none;
-}
-
-li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding: 10px;
-}
-
-.right{
-    display: flex;
-    align-items:center;
-    gap: 5px;
-}
-
 article img{
     width: 100%;
-    max-width: 120px;
-    height: 100px; /* Da a todas las imagenes la misma altura visual */
-    object-fit: contain; /* Ayuda a que la imagen no se deforme */
-    display: block; /* Ayuda a que margin 0 auto funcione bien ya que img es inline */
-    margin: 0 auto; /* centra horizontalmente */
+    max-width: 160px;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 article h3{
     margin: auto;
+    font-size: 1.3rem;
 }
 
 article p{
     margin-top: auto;
     color: green;
+    font-size: 1.2rem;
+}
+
+.add_product{
+    padding: 8px 24px;
+    background-color: rgb(17, 93, 255);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+#cart{
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#cartItems {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+#cartItems li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.cantidad-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cantidad-control button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cantidad-control span {
+    min-width: 24px;
+    text-align: center;
+}
+
+.remove_element {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.empty-cart {
+    justify-content: center;
+    color: gray;
 }
 
 #buy{
@@ -176,18 +232,12 @@ article p{
     border-radius: 5px;
     padding: 10px;
     border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    width: 100%;
 }
 
-.remove_element{
-    background-color: white;
-    color: red;
-    border: none;
-}
-
-#cart{
-    border: none;
-    border-radius: 5px;
-    background-color: orange;
-    padding: 10px;
-
+.remove_element {
+    background-color: #ff4444 !important;
 }

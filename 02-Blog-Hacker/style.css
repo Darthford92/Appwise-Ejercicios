@@ -181,3 +181,56 @@ footer{
     margin: 20px;
     text-align: center;
 }
+
+aside {
+    align-self: flex-start;
+}
+
+.theme-btn, .like-btn {
+    background-color: #01FF00;
+    color: #0D1117;
+    border: none;
+    padding: 8px 16px;
+    margin: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.theme-btn:hover, .like-btn:hover {
+    transform: scale(1.02);
+    background-color: #00cc00;
+}
+
+body {
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgba(0, 255, 0, 0.03) 0px,
+        rgba(0, 255, 0, 0.03) 2px,
+        transparent 2px,
+        transparent 6px
+    );
+}
+
+.theme-btn, .like-btn {
+    background-color: #01FF00;
+    color: #0D1117;
+    border: none;
+    padding: 8px 16px;
+    margin: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.theme-btn:hover, .like-btn:hover {
+    transform: scale(1.02);
+    background-color: #00cc00;
+}
+
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}

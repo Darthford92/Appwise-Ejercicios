@@ -9,26 +9,25 @@
 <body>
     <header>
         <h1>Appwise Store</h1>
-        <button id="cart">🛒 Ver Carrito (2)</button>
+        <button id="cart">🛒 Ver Carrito (<span id="cartCount">0</span>)</button>
     </header>
     <main>
-        <!-- Div creado para contener el section y cambiar la direccion del flex-->
         <div class="products_container">
-            <h2 >Nuestros productos</h2>
-            <section>
-                <article>
+            <h2>Nuestros productos</h2>
+            <section id="productosSection">
+                <article data-id="1" data-nombre="Auriculares Inalámbricos" data-precio="49.99">
                     <img src="assets/auricular_gamer.webp" alt="Auriculares Inalámbricos" width="100">
-                    <h3>Auriculares Inalambricos</h3>
+                    <h3>Auriculares Inalámbricos</h3>
                     <p><strong>$49.99</strong></p>
                     <button class="add_product">Añadir al carrito</button>
                 </article>
-                <article>
+                <article data-id="2" data-nombre="Teclado Mecánico" data-precio="99.99">
                     <img src="assets/teclado_mecanico.webp" alt="Teclado Mecánico" width="100">
                     <h3>Teclado Mecánico</h3>
                     <p><strong>$99.99</strong></p>
                     <button class="add_product">Añadir al carrito</button>
                 </article>
-                <article>
+                <article data-id="3" data-nombre="Mouse Gamer RGB" data-precio="29.99">
                     <img src="assets/mouse_gamer.webp" alt="Mouse Gamer con luces RGB" width="100">
                     <h3>Mouse Gamer RGB</h3>
                     <p><strong>$29.99</strong></p>
@@ -36,31 +35,22 @@
                 </article>
             </section>
         </div>
-        
-        <aside>
+    </main>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-contenido">
+            <span id="closeModal" class="cerrar">&times;</span>
             <h2>Resumen de Compra</h2>
             <hr>
-            <ul>
-                <li>
-                    <span>Teclado Mecánico</span>
-                    <div class="right">
-                        <strong>$99.99</strong>
-                        <button class="remove_element"> X </button>
-                    </div>
-                </li>
-
-                <li>
-                    <span>Auriculares Inalámbricos </span>
-                    <div class="right">
-                        <strong>$49.99</strong>
-                        <button class="remove_element"> X </button>
-                    </div>
-                </li>
+            <ul id="cartItems">
+                <li class="empty-cart">No hay productos en el carrito</li>
             </ul>
             <hr>
-            <h3><strong>Total: $149.98</strong></h3>
+            <h3><strong>Total: $<span id="cartTotal">0.00</span></strong></h3>
             <button id="buy">Finalizar Compra</button>
-        </aside>
-    </main>
+        </div>
+    </div>
+
+    <script src="carrito.js"></script>
 </body>
 </html>

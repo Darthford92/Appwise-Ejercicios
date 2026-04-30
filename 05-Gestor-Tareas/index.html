@@ -13,7 +13,7 @@
             <input id="new_task" type="text" placeholder="¿Qué necesitas hacer hoy?">
             <button id="add_task">Agregar Tareas</button>
         </section>
-        <ul>
+        <ul id="listaTareas">
             <li>
                 <label for="tarea1">
                     <input type="checkbox" id="tarea1">
@@ -38,9 +38,11 @@
         </ul>
          <hr>
         <div class="file">
-            <p>Tienes 2 tareas pendientes</p>
-            <button> Limpiar completadas</button>
+            <p id="contadorPendientes">Tienes 2 tareas pendientes</p>
+            <button id="limpiarCompletadas"> Limpiar completadas</button>
         </div>
     </main>
+
+    <script src="tareas.js"></script>
 </body>
 </html>

@@ -249,3 +249,45 @@ th, td{
 .acction{
   color: rgb(43, 42, 42);
 }
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    margin: auto;
+}
+
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.5);
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+dialog input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+dialog button {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+dialog button[type="submit"] {
+    background-color: rgb(91, 91, 255);
+    color: white;
+}
+
+dialog button[type="button"] {
+    background-color: #ccc;
+}

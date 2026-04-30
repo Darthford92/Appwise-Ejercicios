@@ -11,8 +11,23 @@
     <header>
         <h1>Teclado Mecánico Appwise Ninja</h1>
         <p id="subtitle">Escriba a la velocidad de la luz. Sin distracciones</p>
-        <button type="button"><strong>Comprar Ahora - $99</strong></button>
+        <button type="button" id="btnComprarDirecto"><strong>Comprar Ahora - $99</strong></button>
     </header>
+
+    <div id="carritoIcono" class="carrito-icono">
+        🛒 <span id="contadorCarrito">0</span>
+    </div>
+
+    <div id="carritoModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrarModal">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div id="listaCarrito"></div>
+            <p><strong>Total: $<span id="totalCarrito">0</span></strong></p>
+            <button id="vaciarCarrito">Vaciar Carrito</button>
+            <button id="cerrarCarritoBtn">Seguir comprando</button>
+        </div>
+    </div>
 
     <section>
         <div class="video-container">
@@ -77,8 +92,8 @@
                 </tr>
                 <tr>
                     <td ><strong>Precio</strong></td>
-                    <td class="caracter">$29.99</td>
-                    <td class="caracter" id="valor"><strong>$99.99</strong></td>
+                    <td class="caracter">$29.99 <button class="btnAgregar" data-modelo="basico" data-precio="29.99">Agregar</button></td>
+                    <td class="caracter" id="valor"><strong>$99.99</strong> <button class="btnAgregar" data-modelo="ninja" data-precio="99.99">Agregar</button></td>
                 </tr>
             </tbody>
         </table>
@@ -110,5 +125,7 @@
         </div>
         <p> © 2024 Appwise Gear.</p>
     </footer>
+
+    <script src="landing.js"></script>
 </body>
 </html>

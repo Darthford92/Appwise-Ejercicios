@@ -45,7 +45,13 @@
         enviar el formulario sin antes sin rellenar los campos-->
 
         <label for="contraseña"><Strong> Contraseña: </Strong></label>
-        <input type="password" name="contraseña" id="contraseña" placeholder="**********" required>
+        <div style="display: flex; gap: 5px;">
+            <input type="password" name="contraseña" id="contraseña" placeholder="**********" required style="flex:1">
+            <button type="button" id="togglePassword" style="padding: 10px;">👁️</button>
+        </div>
+
+        <label for="confirmar"><Strong>Confirmar Contraseña: </Strong></label>
+        <input type="password" name="confirmar" id="confirmar" placeholder="Repite tu contraseña" required>
 
         <label for="nacimiento"><Strong>Fecha de Nacimiento: </Strong></label>
         <input type="date" name="nacimiento" id="nacimiento" required>
@@ -87,7 +93,7 @@
         </label>
         
 
-        <button type="submit" name="CrearCuenta" value="crear" >Crear Cuenta</button>
+        <button type="submit" name="CrearCuenta" value="crear" id="btnCrear" disabled>Crear Cuenta</button>
         <!--Los botones tienen varios tipos, submit envía la información de los
         formularios, button no hace nada por si solo, servira al meterle javascrip 
         y usar el DOM, por último reset sirve para limpiar los datos del formulario.
@@ -103,5 +109,14 @@
         form permite conectar el botón con un formulario aunque el mismo esté fuera de 
         la página-->
     </form>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span id="cerrarModal" class="cerrar">&times;</span>
+            <p id="mensajeModal">Usuario registrado con éxito.</p>
+        </div>
+    </div>
+
+    <script src="registro.js"></script>
 </body>
 </html>

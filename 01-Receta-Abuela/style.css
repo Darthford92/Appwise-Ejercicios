@@ -71,3 +71,49 @@ footer{
     text-align: center; /* alineo el texto al centro */
     font-size: 2rem; /* aumento el tamaño de la fuente */
 }
+
+
+.tachado {
+    text-decoration: line-through;
+    color: #888;
+    opacity: 0.7;
+}
+
+.btn-toggle {
+    background-color: #D32F31;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-toggle:hover {
+    background-color: #b52b2d;
+    transform: scale(1.02);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+nav a {
+    color: #D32F31;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #a02022;
+}
